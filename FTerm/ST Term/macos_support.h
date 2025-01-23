@@ -1,6 +1,5 @@
 //
 //  macos_support.h
-//  FortranProcessing
 //
 //  Created by Michael Larson on 11/28/23.
 //
