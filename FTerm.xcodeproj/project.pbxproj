@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF7986AD2B2668F700F0CF77 /* rgb.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF79869D2B2668F200F0CF77 /* rgb.txt */; };
+		FF7986AE2B2668F700F0CF77 /* macos_support.c in Sources */ = {isa = PBXBuildFile; fileRef = FF7986A02B2668F300F0CF77 /* macos_support.c */; };
+		FF7986AF2B2668F700F0CF77 /* st.c in Sources */ = {isa = PBXBuildFile; fileRef = FF7986A12B2668F400F0CF77 /* st.c */; };
+		FF7986B02B2668F700F0CF77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7986A62B2668F500F0CF77 /* AppDelegate.m */; };
+		FF7986B12B2668F700F0CF77 /* stb_truetype.c in Sources */ = {isa = PBXBuildFile; fileRef = FF7986A82B2668F600F0CF77 /* stb_truetype.c */; };
+		FF7986B22B2668F700F0CF77 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7986AA2B2668F700F0CF77 /* Renderer.m */; };
+		FF7986B32B2668F700F0CF77 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = FF7986AB2B2668F700F0CF77 /* Shaders.metal */; };
+		FF7986B82B26691500F0CF77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7986B52B26691400F0CF77 /* main.m */; };
+		FF7986B92B26691500F0CF77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7986B62B26691500F0CF77 /* Assets.xcassets */; };
+		FF7986BA2B26691500F0CF77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7986B72B26691500F0CF77 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF7986802B2668C000F0CF77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF79865C2B2668BE00F0CF77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7986632B2668BE00F0CF77;
+			remoteInfo = FTerm;
+		};
+		FF79868A2B2668C000F0CF77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF79865C2B2668BE00F0CF77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7986632B2668BE00F0CF77;
+			remoteInfo = FTerm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF7986642B2668BE00F0CF77 /* FTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF79867F2B2668C000F0CF77 /* FTermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7986892B2668C000F0CF77 /* FTermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF79869C2B2668F200F0CF77 /* bible.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bible.txt; sourceTree = "<group>"; };
+		FF79869D2B2668F200F0CF77 /* rgb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgb.txt; sourceTree = "<group>"; };
+		FF79869E2B2668F300F0CF77 /* st.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = st.h; sourceTree = "<group>"; };
+		FF79869F2B2668F300F0CF77 /* macos_support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macos_support.h; sourceTree = "<group>"; };
+		FF7986A02B2668F300F0CF77 /* macos_support.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = macos_support.c; sourceTree = "<group>"; };
+		FF7986A12B2668F400F0CF77 /* st.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = st.c; sourceTree = "<group>"; };
+		FF7986A22B2668F400F0CF77 /* config.def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.def.h; sourceTree = "<group>"; };
+		FF7986A32B2668F400F0CF77 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		FF7986A42B2668F500F0CF77 /* st_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = st_types.h; sourceTree = "<group>"; };
+		FF7986A52B2668F500F0CF77 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF7986A62B2668F500F0CF77 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF7986A72B2668F600F0CF77 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		FF7986A82B2668F600F0CF77 /* stb_truetype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_truetype.c; sourceTree = "<group>"; };
+		FF7986A92B2668F600F0CF77 /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		FF7986AA2B2668F700F0CF77 /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		FF7986AB2B2668F700F0CF77 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		FF7986B42B26691400F0CF77 /* FTerm.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = FTerm.entitlements; sourceTree = "<group>"; };
+		FF7986B52B26691400F0CF77 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF7986B62B26691500F0CF77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF7986B72B26691500F0CF77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FF7986BE2B2A73F600F0CF77 /* unused_x.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unused_x.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF7986612B2668BE00F0CF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79867C2B2668C000F0CF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7986862B2668C000F0CF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF79865B2B2668BE00F0CF77 = {
+			isa = PBXGroup;
+			children = (
+				FF7986662B2668BE00F0CF77 /* FTerm */,
+				FF7986652B2668BE00F0CF77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF7986652B2668BE00F0CF77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF7986642B2668BE00F0CF77 /* FTerm.app */,
+				FF79867F2B2668C000F0CF77 /* FTermTests.xctest */,
+				FF7986892B2668C000F0CF77 /* FTermUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF7986662B2668BE00F0CF77 /* FTerm */ = {
+			isa = PBXGroup;
+			children = (
+				FF7986BD2B266A9500F0CF77 /* STB TrueType */,
+				FF7986BC2B266A7000F0CF77 /* ST Term */,
+				FF7986BB2B266A5F00F0CF77 /* Resources */,
+				FF7986A52B2668F500F0CF77 /* AppDelegate.h */,
+				FF7986A62B2668F500F0CF77 /* AppDelegate.m */,
+				FF7986A32B2668F400F0CF77 /* Renderer.h */,
+				FF7986AA2B2668F700F0CF77 /* Renderer.m */,
+				FF7986AB2B2668F700F0CF77 /* Shaders.metal */,
+				FF7986A72B2668F600F0CF77 /* ShaderTypes.h */,
+				FF7986B62B26691500F0CF77 /* Assets.xcassets */,
+				FF7986B42B26691400F0CF77 /* FTerm.entitlements */,
+				FF7986B52B26691400F0CF77 /* main.m */,
+				FF7986B72B26691500F0CF77 /* Main.storyboard */,
+			);
+			path = FTerm;
+			sourceTree = "<group>";
+		};
+		FF7986BB2B266A5F00F0CF77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF79869C2B2668F200F0CF77 /* bible.txt */,
+				FF79869D2B2668F200F0CF77 /* rgb.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF7986BC2B266A7000F0CF77 /* ST Term */ = {
+			isa = PBXGroup;
+			children = (
+				FF7986BE2B2A73F600F0CF77 /* unused_x.c */,
+				FF7986A22B2668F400F0CF77 /* config.def.h */,
+				FF79869F2B2668F300F0CF77 /* macos_support.h */,
+				FF7986A02B2668F300F0CF77 /* macos_support.c */,
+				FF7986A42B2668F500F0CF77 /* st_types.h */,
+				FF7986A12B2668F400F0CF77 /* st.c */,
+				FF79869E2B2668F300F0CF77 /* st.h */,
+			);
+			path = "ST Term";
+			sourceTree = "<group>";
+		};
+		FF7986BD2B266A9500F0CF77 /* STB TrueType */ = {
+			isa = PBXGroup;
+			children = (
+				FF7986A82B2668F600F0CF77 /* stb_truetype.c */,
+				FF7986A92B2668F600F0CF77 /* stb_truetype.h */,
+			);
+			path = "STB TrueType";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF7986632B2668BE00F0CF77 /* FTerm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7986932B2668C000F0CF77 /* Build configuration list for PBXNativeTarget "FTerm" */;
+			buildPhases = (
+				FF7986602B2668BE00F0CF77 /* Sources */,
+				FF7986612B2668BE00F0CF77 /* Frameworks */,
+				FF7986622B2668BE00F0CF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTerm;
+			productName = FTerm;
+			productReference = FF7986642B2668BE00F0CF77 /* FTerm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF79867E2B2668C000F0CF77 /* FTermTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7986962B2668C000F0CF77 /* Build configuration list for PBXNativeTarget "FTermTests" */;
+			buildPhases = (
+				FF79867B2B2668C000F0CF77 /* Sources */,
+				FF79867C2B2668C000F0CF77 /* Frameworks */,
+				FF79867D2B2668C000F0CF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF7986812B2668C000F0CF77 /* PBXTargetDependency */,
+			);
+			name = FTermTests;
+			productName = FTermTests;
+			productReference = FF79867F2B2668C000F0CF77 /* FTermTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF7986882B2668C000F0CF77 /* FTermUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7986992B2668C000F0CF77 /* Build configuration list for PBXNativeTarget "FTermUITests" */;
+			buildPhases = (
+				FF7986852B2668C000F0CF77 /* Sources */,
+				FF7986862B2668C000F0CF77 /* Frameworks */,
+				FF7986872B2668C000F0CF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF79868B2B2668C000F0CF77 /* PBXTargetDependency */,
+			);
+			name = FTermUITests;
+			productName = FTermUITests;
+			productReference = FF7986892B2668C000F0CF77 /* FTermUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF79865C2B2668BE00F0CF77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FF7986632B2668BE00F0CF77 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FF79867E2B2668C000F0CF77 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FF7986632B2668BE00F0CF77;
+					};
+					FF7986882B2668C000F0CF77 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FF7986632B2668BE00F0CF77;
+					};
+				};
+			};
+			buildConfigurationList = FF79865F2B2668BE00F0CF77 /* Build configuration list for PBXProject "FTerm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF79865B2B2668BE00F0CF77;
+			productRefGroup = FF7986652B2668BE00F0CF77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF7986632B2668BE00F0CF77 /* FTerm */,
+				FF79867E2B2668C000F0CF77 /* FTermTests */,
+				FF7986882B2668C000F0CF77 /* FTermUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF7986622B2668BE00F0CF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7986AD2B2668F700F0CF77 /* rgb.txt in Resources */,
+				FF7986B92B26691500F0CF77 /* Assets.xcassets in Resources */,
+				FF7986BA2B26691500F0CF77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79867D2B2668C000F0CF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7986872B2668C000F0CF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF7986602B2668BE00F0CF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7986B12B2668F700F0CF77 /* stb_truetype.c in Sources */,
+				FF7986B32B2668F700F0CF77 /* Shaders.metal in Sources */,
+				FF7986B02B2668F700F0CF77 /* AppDelegate.m in Sources */,
+				FF7986B22B2668F700F0CF77 /* Renderer.m in Sources */,
+				FF7986AF2B2668F700F0CF77 /* st.c in Sources */,
+				FF7986B82B26691500F0CF77 /* main.m in Sources */,
+				FF7986AE2B2668F700F0CF77 /* macos_support.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79867B2B2668C000F0CF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7986852B2668C000F0CF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF7986812B2668C000F0CF77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7986632B2668BE00F0CF77 /* FTerm */;
+			targetProxy = FF7986802B2668C000F0CF77 /* PBXContainerItemProxy */;
+		};
+		FF79868B2B2668C000F0CF77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7986632B2668BE00F0CF77 /* FTerm */;
+			targetProxy = FF79868A2B2668C000F0CF77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF7986912B2668C000F0CF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF7986922B2668C000F0CF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF7986942B2668C000F0CF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FTerm/FTerm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A54HA75PNX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Larson.FTerm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		FF7986952B2668C000F0CF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FTerm/FTerm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A54HA75PNX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Larson.FTerm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		FF7986972B2668C000F0CF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A54HA75PNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Larson.FTermTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTerm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FTerm";
+			};
+			name = Debug;
+		};
+		FF7986982B2668C000F0CF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A54HA75PNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Larson.FTermTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTerm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FTerm";
+			};
+			name = Release;
+		};
+		FF79869A2B2668C000F0CF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A54HA75PNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Larson.FTermUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = FTerm;
+			};
+			name = Debug;
+		};
+		FF79869B2B2668C000F0CF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A54HA75PNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Larson.FTermUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = FTerm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF79865F2B2668BE00F0CF77 /* Build configuration list for PBXProject "FTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7986912B2668C000F0CF77 /* Debug */,
+				FF7986922B2668C000F0CF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7986932B2668C000F0CF77 /* Build configuration list for PBXNativeTarget "FTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7986942B2668C000F0CF77 /* Debug */,
+				FF7986952B2668C000F0CF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7986962B2668C000F0CF77 /* Build configuration list for PBXNativeTarget "FTermTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7986972B2668C000F0CF77 /* Debug */,
+				FF7986982B2668C000F0CF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7986992B2668C000F0CF77 /* Build configuration list for PBXNativeTarget "FTermUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF79869A2B2668C000F0CF77 /* Debug */,
+				FF79869B2B2668C000F0CF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF79865C2B2668BE00F0CF77 /* Project object */;
+}
